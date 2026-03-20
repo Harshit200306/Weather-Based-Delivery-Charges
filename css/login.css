@@ -1,0 +1,98 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: linear-gradient(135deg, #1542dc, #feb47b);
+}
+
+
+
+.container{
+background:white;
+padding:40px;
+width:350px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.container h2{
+margin-bottom:25px;
+color:#333;
+}
+
+
+
+.container input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:15px;
+}
+
+.container input:focus{
+outline:none;
+border-color:#ff7e5f;
+}
+
+
+.container button{
+width:100%;
+padding:12px;
+margin-top:15px;
+background:#191b1d;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.container button:hover{
+background:white;
+color: #ff7e5f;
+}
+
+
+
+.container p{
+margin-top:15px;
+font-size:14px;
+}
+
+.container a{
+color:black;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container a:hover{
+text-decoration:underline;
+}
+
+#invalid{
+    color: red;
+    font-weight: 500;
+}
+#success{
+    color: rgb(7, 149, 45);
+    font-weight: 500;
+    padding: 6px;
+}
+#emailError,#passError{
+color:red;
+font-size:14px;
+margin-top:4px;
+}
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+
+  <header>
+    <h2>🛒 Your Cart</h2>
+    
+     <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav id="nav-menu">
+        <a href="home.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#foot">Contact</a>
+
+        
+    </nav>
+</header>
+
+
+
+  <div class="cart-box">
+
+    <div id="items"></div>
+
+
+    <input id="loc" placeholder="Enter your location">
+  
+
+    <br>
+    <button id="tom" onclick="order()">Place Order</button>
+    <p id="msg"></p>
+
+    <h3 id="result"></h3>
+  </div>
+
+
+  <div id="items"></div>
+  <section id="about">
+    <div class="about-container">
+
+      <h2>About Us</h2>
+      <p class="tagline">Delivering Happiness at Your Doorstep 🚀</p>
+
+      <p>
+        Welcome to our Food Delivery Website! We deliver fresh and delicious
+        food at your doorstep quickly and safely.
+      </p>
+
+      <p>
+        Our system uses weather-based delivery charges to provide fair pricing
+        in different conditions.
+      </p>
+
+      <p>
+        Our goal is to give you the best experience with fast delivery and
+        quality service.
+      </p>
+
+
+
+      <div class="about-box">
+        <div class="about-card">
+          <h3>🍔 Quality Food</h3>
+          <p>Fresh and hygienic food delivered with care.</p>
+        </div>
+
+        <div class="about-card">
+          <h3>⚡ Fast Delivery</h3>
+          <p>Quick delivery at your doorstep.</p>
+        </div>
+
+        <div class="about-card">
+          <h3>🌦 Smart Pricing</h3>
+          <p>Charges based on real-time weather.</p>
+        </div>
+      </div>
+
+
+  </section>
+
+
+  <div id="chatBtn" onclick="toggleChat()">🎧</div>
+
+
+  <div id="chatPopup">
+    <div id="chatHeader">
+      Help Centre
+      <span style="cursor: pointer;" onclick="toggleChat()">✖</span>
+    </div>
+
+    <div id="chatBody"></div>
+
+    <div id="chatInputArea">
+      <input id="userInput" placeholder="Ask something...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <div id="overlay" onclick="toggleChat()"></div>
+
+
+
+  <footer id="foot"  class="footer">
+    <div class="footer-container">
+
+      <div class="footer-box">
+        <h2>🍔 Foodie</h2>
+        <p>Your favourite food delivery website. Fast & fresh delivery at your doorstep.</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Owner</h3>
+        <p>Harshit Sharma</p>
+        <p>Email: yourmail@gmail.com</p>
+        <p>Phone: 90XXXXXXXX</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Links</h3>
+        <a href="index.html">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Follow</h3>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Foodie | Designed by Harshit 🚀</p>
+    </div>
+  </footer>
+  <script src="js/cart.js"></script>
+</body>
+
+</html>

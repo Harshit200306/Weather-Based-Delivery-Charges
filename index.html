@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Hub</title>
+
+  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+
+    
+</head>
+
+<body>
+
+  
+    <div class="navbar">
+        <div class="logo">🍔 Foodie Hub</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#foot">Contact</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h1>Welcome to Foodie Hub</h1>
+            <p>Order your favorite food anytime 🍕</p>
+
+            <button class="btn login-btn" onclick="openLogin()">Login</button>
+            <button class="btn register-btn" onclick="openRegister()">Register</button>
+        </div>
+    </div>
+
+
+    <section id="about">
+        <div class="about-container">
+
+            <h2>About Us</h2>
+            <p class="tagline">Delivering Happiness at Your Doorstep 🥰🥰</p>
+
+            <p>
+                Welcome to our Food Delivery Website! We deliver fresh and delicious
+                food at your doorstep quickly and safely.
+            </p>
+
+            <p>
+                Our system uses weather-based delivery charges to provide fair pricing
+                in different conditions.
+            </p>
+
+            <p>
+                Our goal is to give you the best experience with fast delivery and
+                quality service.
+            </p>
+            <div class="about-box">
+                <div class="about-card">
+                    <h3>🍔 Quality Food</h3>
+                    <p>Fresh and hygienic food delivered with care.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>⚡ Fast Delivery</h3>
+                    <p>Quick delivery at your doorstep.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>🌦 Smart Pricing</h3>
+                    <p>Charges based on real-time weather.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="foot" class="footer">
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h2>🍔 Foodie</h2>
+                <p>Your favourite food delivery website. Fast & fresh delivery at your doorstep.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Owner</h3>
+                <p>Harshit Sharma</p>
+                <p>Email: yourmail@gmail.com</p>
+                <p>Phone: 90XXXXXXXX</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Links</h3>
+                <a href="index.html">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About Us</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Follow</h3>
+                <a href="https://www.instagram.com/harshit_sharmaaaaa_?igsh=MTJzdXRiM2RycnNuNg==">Instagram</a>
+                <a href="https://www.facebook.com/share/18TSvntSpW/">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Foodie | Designed by Harshit 🚀</p>
+        </div>
+    </footer>
+
+    <script>
+        function openLogin() {
+            window.location.href = "login.html";
+        }
+
+        function openRegister() {
+            window.location.href = "signup.html";
+        }
+
+        function toggleMenu() {
+            const nav = document.querySelector(".nav-links");
+            nav.classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
