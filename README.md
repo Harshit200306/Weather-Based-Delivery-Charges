@@ -57,6 +57,5 @@ This project was developed to solve the problem of fixed delivery charges in all
 👨‍💻 Author
 
 Harshit Sharma
-Aspiring Java Developer | MCA Student
 
 ---
